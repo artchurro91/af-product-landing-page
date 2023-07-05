@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #FAFAFA;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        #banner-2 {
+            position: relative;
+            width: 100%;
+            height: 730px;
+            overflow-x: hidden;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            #banner-2 {
+                height: 718px;
+            }
+        }
+        .banner-content {
+            width: 398px;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            .banner-content {
+                width: 96%;
+                max-width: 739px;
+                height: 621px;
+                margin-top: 17px;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+            .banner-content {
+                max-width: 1302px;
+            }
+        }
+        .decorative-text {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 72%;
+            max-width: 286px;
+            height: auto;
+            translate: -50%;
+        }
+        #hl {
+            width: 40%;
+            max-width: 159px;
+            height: auto;
+            position: absolute;
+            bottom: 6px;
+            left: 80px;
+            rotate: -32deg;
+        }
+        #fb {
+            width: 63%;
+            max-width: 249px;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            rotate: 19deg;
+        }
+        @media screen and (min-width: 768px) {
+            .decorative-text {
+                top: 152px;
+                left: 25%;
+                translate: 0;
+            }
+            #hl {
+                left: 32px;
+                bottom: auto;
+                top: 0;
+                rotate: 30deg;
+            }
+            #fb {
+                right: 50px;
+                bottom: 0;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+            .decorative-text {
+                width: 36%;
+                max-width: 463px;
+                left: 32%;
+                top: 27px;
+            }
+            #hl {
+                width: 18%;
+                max-width: 233px;
+            }
+            #fb {
+                width: 28%;
+                max-width: 360px;
+            }
+        }
+        .cloud-tr-blue {
+            position: absolute;
+            max-width: 344px;
+            top: 261px;
+            right: 0;
+            z-index: -1;
+            translate: 43% 0;
+        }
+        .cloud-r {
+            max-width: 602px;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            translate: -13%;
+        }
+        .cloud-l {
+            max-width: 573px;
+            height: auto;
+            position: absolute;
+            bottom: 161px;
+            translate: -38%;
+            z-index: -1;
+        }
+        .linear_gradient-white {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #FAFAFA 90%);
+        }
+        @media screen and (min-width: 768px) {
+            .cloud-tr-blue {
+                top: 134px;
+                translate: 24%;
+            }
+            .cloud-r {
+                translate: 14%;
+                right: 0;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .cloud-tr-blue {
+                translate: -11%;
+            }
+            .cloud-l {
+                translate: -14%;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            .cloud-tr-blue {
+                translate: -36%;
+            }
+            .cloud-r {
+                translate: 0;
+            }
+            .cloud-l {
+                translate: 14%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="banner-2">
+        <div class="banner-bkgd"></div>
+        <div class="banner-content">
+            <div class="decorative-text">
+                <img src="/imgs/decorative-text.svg" alt="Decorative Text">
+            </div>
+            <div class="img-ctn">
+                <img id="hl" src="/imgs/heart-lollipop-red.png" alt="Heart Lollipop">
+                <img id="fb" src="/imgs/rainbow-flower-bear.png" alt="Flower Bear Rainbow">
+            </div>
+        </div>
+        <img class="cloud-tr-blue" src="imgs/banner_cloud-top-right-blue.svg" alt="">
+        <img class="cloud-l" src="/imgs/banner_cloud-left-blue.svg" alt="">
+        <img class="cloud-r" src="/imgs/banner_cloud-right-blue.svg" alt="">
+        <div class="linear_gradient-white"></div>
+    </section>
+</body>
+</html>

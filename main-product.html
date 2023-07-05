@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Always and Forever</title>
+</head>
+<body>
+
+    <div class="af-main-header">
+        <div class="header-left">
+            <div class="icon" id="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35"><path d="M6.5,10h35A2.362,2.362,0,0,0,44,7.5,2.362,2.362,0,0,0,41.5,5H6.5A2.362,2.362,0,0,0,4,7.5,2.362,2.362,0,0,0,6.5,10Zm0,15h35A2.362,2.362,0,0,0,44,22.5,2.362,2.362,0,0,0,41.5,20H6.5A2.362,2.362,0,0,0,4,22.5,2.362,2.362,0,0,0,6.5,25Zm0,15h35a2.5,2.5,0,1,0,0-5H6.5a2.5,2.5,0,1,0,0,5Z" transform="translate(-4 -5)" fill="#000000"/></svg>
+            </div>
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Occasions</a></li>
+                        <li><a href="#">Shop All</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-nav mobile-drawer">
+                <div id="close-btn">
+                    <img src="/imgs/close-btn.svg" alt="Close Button">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Occasions</a></li>
+                        <li><a href="#">Shop All</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-overlay" style="display: none;"></div>
+        </div>
+        <div class="header-center">
+            <div class="logo" tabindex="0">
+                <picture>
+                    <source media="(min-width: 500px)" srcset="/imgs/always_and_forever-logo.png">
+                    <img src="/imgs/always_and_forever-logo_vertical.svg" loading="lazy" alt="Always and Forever Logo">
+                </picture>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="icon" id="search-icon">
+                <img src="/imgs/search-icon.svg" alt="Search Icon">
+            </div>
+            <div class="desktop-search-container">
+                <div class="searchbar"></div>
+            </div>
+            <div class="icon" id="cart-icon" role="button" tabindex="0">
+                <img src="/imgs/shopping-bag-icon.svg" alt="Cart Icon">
+            </div>
+        </div>
+        <div class="mobile-search-container">
+            <div class="searchbar"></div>
+            <div id="search-close">
+                <img src="/imgs/close-btn.svg" alt="Close Button">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Product -->
+    <main id="product-container">
+        <div class="col col-left">
+            <div class="product-media-gallery">
+                <div class="product-thumbnails">
+                    <div id="thumbnailPrevBtn">Prev</div>
+                    <ul>
+                        <li class="product-thumbnail" tabindex="0">
+                            <img src="imgs/Product-Images/crystal-bear-black-front.jpg" alt="Crystal Bear product black front view" width="100" height="100">
+                        </li>
+                        <li class="product-thumbnail" tabindex="0">
+                            <img src="imgs/Product-Images/crystal-bear-black-2.jpg" alt="Crystal Bear product black side view" width="100" height="100">
+                        </li>
+                        <li class="product-thumbnail" tabindex="0">
+                            <img src="imgs/Product-Images/crystal-bear-hero.jpg" alt="Crystal Bear product displayed in the palm of a model's hand" width="100" height="100">
+                        </li>
+                        <li class="product-thumbnail" tabindex="0">
+                            <img src="imgs/Product-Images/crystal-bear-black-front.jpg" alt="Crystal Bear product black front view" width="100" height="100">
+                        </li>
+                    </ul>
+                    <div id="thumbnailNextBtn">Next</div>
+                </div>
+                <div class="product-feature-image" tabindex="0">
+                    <img src="imgs/Product-Images/crystal-bear-black.jpg" alt="Crystal bear black product with packaging" width="768" height="768">
+                </div>
+            </div>
+        </div>
+        <div class="col col-right">
+            <div class="product-sidebar">
+                <div class="product-title">
+                    <h1>Crystal Bear</h1>
+                    <div class="product-price">
+                        <div class="current-at-price">
+                            <span>Sale</span>
+                            <p>$39.99</p>
+                        </div>
+                        <div class="compare-at-price">
+                            <p class="price">$20.00</p>
+                            <span class="strikethrough"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description">
+                    <p>Add an extra dose of style with this raw look henley t-shirt from the house of Tinted. Team this T-shirt with distressed jeans and leather sandals for a relaxed and...</p>
+                </div>
+                <form action="#">
+                    <!-- Carousel Container -->
+                    <div class="variant-carousel-container">
+                        <div id="variantSelection">Color: <span>Black</span></div>
+                        <div id="variantPrevBtn"><img src="/imgs/left-arrow-icon.svg" alt="left arrow icon"></div>
+                        <div class="product-variants">
+                            <!-- Carousel -->
+                            <ul id="variantCarousel">
+                                <!-- Carousel Item -->
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Black">
+                                    <input type="radio" name="id" id="variant-1" value="Swatch 1" data-inventory-quantity="100" data-full-image="crystal-bear-black.jpg" data-color="black">
+                                    <label for="variant-1">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-black.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Bubblegum">
+                                    <input type="radio" name="id" id="variant-2" value="Swatch 2" data-inventory-quantity="100" data-full-image="crystal-bear-bubblegum.jpg" data-color="bubblegum">
+                                    <label for="variant-2">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-bubblegum.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Coral">
+                                    <input type="radio" name="id" id="variant-3" value="Swatch 3" data-inventory-quantity="100" data-full-image="crystal-bear-coral.jpg" data-color="coral">
+                                    <label for="variant-3">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-coral.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Cream">
+                                    <input type="radio" name="id" id="variant-4" value="Swatch 4" data-inventory-quantity="100" data-full-image="crystal-bear-cream.jpg" data-color="cream">
+                                    <label for="variant-4">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-cream.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Dark Blue">
+                                    <input type="radio" name="id" id="variant-5" value="Swatch 5" data-inventory-quantity="100" data-full-image="crystal-bear-dark_blue.jpg" data-color="blue">
+                                    <label for="variant-5">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-dark_blue.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Green">
+                                    <input type="radio" name="id" id="variant-6" value="Swatch 6" data-inventory-quantity="100" data-full-image="crystal-bear-green.jpg" data-color="green">
+                                    <label for="variant-6">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-green.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Light Blue">
+                                    <input type="radio" name="id" id="variant-7" value="Swatch 7" data-inventory-quantity="100" data-full-image="crystal-bear-light_blue.jpg" data-color="light blue">
+                                    <label for="variant-7">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-light_blue.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Light Pink">
+                                    <input type="radio" name="id" id="variant-8" value="Swatch 8" data-inventory-quantity="100" data-full-image="crystal-bear-light_pink.jpg" data-color="light pink">
+                                    <label for="variant-8">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-light_pink.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Orange">
+                                    <input type="radio" name="id" id="variant-9" value="Swatch 9" data-inventory-quantity="100" data-full-image="crystal-bear-orange.jpg" data-color="orange">
+                                    <label for="variant-9">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-orange.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Powder Blue">
+                                    <input type="radio" name="id" id="variant-10" value="Swatch 10" data-inventory-quantity="100" data-full-image="crystal-bear-powder_blue.jpg" data-color="powder blue">
+                                    <label for="variant-10">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-powder_blue.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Pumpkin">
+                                    <input type="radio" name="id" id="variant-11" value="Swatch 11" data-inventory-quantity="100" data-full-image="crystal-bear-pumpkin.jpg" data-color="pumpkin">
+                                    <label for="variant-11">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-pumpkin.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Purple">
+                                    <input type="radio" name="id" id="variant-12" value="Swatch 12" data-inventory-quantity="100" data-full-image="crystal-bear-purple.jpg" data-color="purple">
+                                    <label for="variant-12">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-purple.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Red">
+                                    <input type="radio" name="id" id="variant-13" value="Swatch 13" data-inventory-quantity="100" data-full-image="crystal-bear-red.jpg" data-color="red">
+                                    <label for="variant-13">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-red.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Strawberry">
+                                    <input type="radio" name="id" id="variant-14" value="Swatch 14" data-inventory-quantity="10" data-full-image="crystal-bear-strawberry.jpg" data-color="strawberry">
+                                    <label for="variant-14">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-strawberry.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Teal">
+                                    <input type="radio" name="id" id="variant-15" value="Swatch 15" data-inventory-quantity="10" data-full-image="crystal-bear-teal.jpg" data-color="teal">
+                                    <label for="variant-15">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-teal.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="White">
+                                    <input type="radio" name="id" id="variant-16" value="Swatch 16" data-inventory-quantity="10" data-full-image="crystal-bear-white.jpg" data-color="white">
+                                    <label for="variant-16">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-white.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                                <li class="product-variant" role="button" tabindex="0" aria-label="Yellow">
+                                    <input type="radio" name="id" id="variant-17" value="Swatch 17" data-inventory-quantity="10" data-full-image="crystal-bear-yellow.jpg" data-color="yellow">
+                                    <label for="variant-17">
+                                        <img src="/imgs/Product-Swatches/crystal-bear-front-yellow.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="variantNextBtn"><img src="/imgs/right-arrow-icon.svg" alt="right arrow icon"></div>
+                    </div>
+                    <div class="product-info">
+                        <div id="productQuantityBtns">
+                            <label for="quantity">Quantity</label>
+                            <input class="js-quantity-field" type="number" name="quantity" id="Quantity" value="1" min="1" max="100">
+                            <button class="quantity-button js-qty-btn minus" type="button" disabled>&dash;</button>
+                            <span class="quantity-text js-quantity-text">1</span>
+                            <button class="quantity-button js-qty-btn plus" type="button">+</button>
+                        </div>
+                    </div>
+                    <div class="purchase-btns">
+                        <div class="buy-now-btn">
+                            <button id="buyNowBtn">Buy Now</button>
+                        </div>
+                        <div class="add-to-cart-btn">
+                            <button id="addToCartBtn">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-accordion">
+                        <ul>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Materials</h2>
+                            <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Dimensions</h2>
+                            <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Additional Info</h2>
+                            <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+                        </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!--<script src="main.js"></script>-->
+    <script src="js-main-product.js" type="module"></script>
+</body>
+</html>

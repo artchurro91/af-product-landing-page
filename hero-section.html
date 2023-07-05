@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:wght@400;500;700&family=Montserrat:wght@400;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero-section {
+            width: 100%;
+            height: 100vh;
+            max-height: 872px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        @media screen and (min-width: 768px) {
+            .hero-section {
+                max-height: 601px;
+            }
+        }
+        @media screen and (min-width: 1500px) {
+            .hero-section {
+                max-height: 872px;
+            }
+        }
+        .hero-section img {
+            width: 100%;
+            height: 100%;
+        }
+        .hero-section .bkgd {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#A1CEDE 30%,#FAFAFA 70%);
+            z-index: -1;
+        }
+
+        /* Top Section Clouds */
+        #cloud_bkgd {
+            width: 159%;
+            height: auto;
+            position: absolute;
+            top: 245px;
+            left: -181px;
+        }
+        @media only screen and (min-width: 767px) {
+            #cloud_bkgd {
+                width: 141%;
+                max-width: 1280px;
+                top: 134px;
+                left: -12%;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            #cloud_bkgd {
+                left:0;
+            }
+        }
+        #hero_cloud {
+            width: 262%;
+            max-width: 1344px;
+            position: absolute;
+            left: -100px;
+            bottom: 234px;
+        }
+        @media only screen and (min-width: 768px) {
+            #hero_cloud {
+                bottom: 30px;
+                left: -25%;
+            }
+        }
+
+        /* Main Header */
+        .main-header {
+            width: 100%;
+            height: 227px;
+            display: grid;
+            grid-template-areas:
+                'left right'
+                'center center'
+            ;
+            margin-bottom: 16px;
+        }
+        @media screen and (min-width: 500px) {
+            .main-header {
+                grid-template-areas: 'left center right';
+                height: 94px;
+            }
+        }
+        .header-left, .header-center, .header-right {
+            display: flex;
+        }
+        .header-left {
+            grid-area: left;
+            align-items: center;
+            padding: 13px 0 13px 20px;
+        }
+        .header-center {
+            width: 100%;
+            justify-content: center;
+            grid-area: center;
+            padding: 13px 0;
+        }
+        .header-right {
+            grid-area: right;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 13px 20px 13px 0;
+        }
+        .logo {
+            width: 43%;
+            height: 100%;
+        }
+        @media screen and (min-width: 500px) {
+            .logo {
+                width: 100%;
+                max-width: 376px;
+            }
+        }
+        .logo img {
+            object-fit: contain;
+        }
+        /* Icons */
+        .icon {
+            max-height: 35px;
+        }
+        #search-icon {
+            margin-right: 14px;
+        }
+        /* Mobile Main Nav */
+        @media screen and (min-width: 1300px) {
+            #menu-icon {
+                display: none;
+            }
+        }
+
+        /* Hero Content */
+        .hero-content {
+            width: 100%;
+            overflow-x: hidden;
+            position: absolute;
+        }
+        @media screen and (min-width: 767px) {
+            .hero-content {
+                width: 93%;
+                max-width: 874px;
+                height: 419px;
+                position: absolute;
+                overflow-x: visible;
+                right: 3%;
+                top: 152px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .hero-content {
+                height: 462px;
+                top: 109px;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            .hero-content {
+                max-width: 1130px;
+                right: 4%;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+            .hero-content {
+                right: 50%;
+                transform: translateX(50%);
+            }
+        }
+        .content-img-ctn {
+            width: 100%;
+            max-width: 430px;
+            height: auto;
+            display: flex;
+            margin: 0 auto 16px;
+        }
+        @media screen and (min-width: 767px) {
+            .content-img-ctn {
+                width: 48%;
+                max-width: 549px;
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        @media screen and (min-width: 767px) {
+            .content-img-ctn {
+                width: 55%;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .content-img-ctn {
+                width: 100%;
+            }
+        }
+        #pinkBear {
+            transform: rotate(-11deg);
+        }
+        #multiColorBear {
+            transform: rotate(11deg);
+        }
+        /* Hero Content Description */
+        .content-desc-ctn {
+            width: 100%;
+            max-width: 370px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media screen and (min-width: 767px) {
+            .content-desc-ctn {
+                width: 49%;
+                margin: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                text-align: left;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .content-desc-ctn {
+                top: 86px;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            .content-desc-ctn {
+                max-width: 489px;
+            }
+        }
+        .content-desc-ctn h1 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #2D2D2D;
+            margin: 0 0 5px 0;
+            font-family: 'Caudex', sans-serif;
+        }
+        @media screen and (min-width: 1280px) {
+            .content-desc-ctn h1 {
+                font-size: 45px;
+            }
+        }
+        .content-desc-ctn p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #2D2D2D;
+            margin: 0 0 12px 0;
+            font-family: 'Fira Sans', sans-serif;
+            line-height: 22px;
+        }
+        .content-desc-ctn a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Fira Sans', sans-serif;
+        }
+        .content-desc-ctn .btn {
+            width: 242px;
+            height: 57px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #C745A0;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        @media screen and (min-width: 767px) {
+            .content-desc-ctn .btn {
+                margin: 0;
+                width: 170px;
+                height: 40px;
+                font-size: 18px;
+                font-family: 'Fira Sans', sans-serif;
+                font-weight: 500;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            .content-desc-ctn .btn {
+                width: 250px;
+                height: 50px;
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="bkgd">
+            <div id="cloud_bkgd">
+                <img src="/imgs/cloud_bkgd.svg" alt="Cloud vector artwork">
+            </div>
+            <div id="hero_cloud">
+                <img src="/imgs/large-cloud.svg" alt="Large Cloud">
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="header-left">
+                <div class="icon" id="menu-icon">
+                    <img src="/imgs/menu-icon.svg" alt="Mobile Menu Icon">
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="logo">
+                    <picture>
+                        <source media="(min-width: 500px)" srcset="/imgs/always_and_forever-logo.png">
+                        <img src="/imgs/always_and_forever-logo_vertical.svg" alt="Always and Forever Logo">
+                    </picture>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon" id="search-icon">
+                    <img src="/imgs/search-icon.svg" alt="Search Icon">
+                </div>
+                <div class="icon" id="cart-icon">
+                    <img src="/imgs/cart-icon.svg" alt="Cart Icon">
+                </div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="content-img-ctn">
+                <img src="/imgs/marshmallow_bear.png" alt="Marshmall Bears">
+            </div>
+            <div class="content-desc-ctn">
+                <h1>Marshmallow Bear</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <a href="#">
+                    <div class="btn">View Collection</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section style="background: red;width:100%;height:400px;"></section>
+</body>
+</html>

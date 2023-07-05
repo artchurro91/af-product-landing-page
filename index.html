@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Always and Forever</title>
+</head>
+<body>
+
+    <div class="af-main-header">
+        <div class="header-left">
+            <div class="icon" id="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" viewBox="0 0 40 35"><path d="M6.5,10h35A2.362,2.362,0,0,0,44,7.5,2.362,2.362,0,0,0,41.5,5H6.5A2.362,2.362,0,0,0,4,7.5,2.362,2.362,0,0,0,6.5,10Zm0,15h35A2.362,2.362,0,0,0,44,22.5,2.362,2.362,0,0,0,41.5,20H6.5A2.362,2.362,0,0,0,4,22.5,2.362,2.362,0,0,0,6.5,25Zm0,15h35a2.5,2.5,0,1,0,0-5H6.5a2.5,2.5,0,1,0,0,5Z" transform="translate(-4 -5)" fill="#000000"/></svg>
+            </div>
+            <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Occasions</a></li>
+                        <li><a href="#">Shop All</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-nav mobile-drawer">
+                <div id="close-btn">
+                    <img src="/imgs/close-btn.svg" alt="Close Button">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Occasions</a></li>
+                        <li><a href="#">Shop All</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-overlay" style="display: none;"></div>
+        </div>
+        <div class="header-center">
+            <div class="logo">
+                <picture>
+                    <source media="(min-width: 500px)" srcset="/imgs/always_and_forever-logo.png">
+                    <img src="/imgs/always_and_forever-logo_vertical.svg" loading="lazy" alt="Always and Forever Logo">
+                </picture>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="icon" id="search-icon">
+                <img src="/imgs/search-icon.svg" alt="Search Icon">
+            </div>
+            <div class="desktop-search-container">
+                <div class="searchbar"></div>
+            </div>
+            <div class="icon" id="cart-icon">
+                <img src="/imgs/shopping-bag-icon.svg" alt="Cart Icon">
+            </div>
+        </div>
+        <div class="mobile-search-container">
+            <div class="searchbar"></div>
+            <div id="search-close">
+                <img src="/imgs/close-btn.svg" alt="Close Button">
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="bkgd">
+            <div id="cloud_bkgd">
+                <img src="/imgs/cloud_bkgd.svg" loading="lazy" alt="Cloud vector artwork">
+            </div>
+            <div id="hero_cloud">
+                <img src="/imgs/large-cloud.svg" loading="lazy" alt="Large Cloud">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="content-img-ctn">
+                <img src="/imgs/marshmallow_bear.png" loading="lazy" alt="Marshmallow Bears">
+                <img src="/imgs/cloudForeground.svg" id="cloudForeground" alt="Large Cloud SVG">
+            </div>
+            <div class="content-desc-ctn">
+                <h1>Marshmallow Bear</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <a href="#">
+                    <div class="btn">View Collection</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="occasions-section">
+        <div class="carousel">
+            <div class="item">
+                <div class="img"><img src="/imgs/marshmallow_bear-item.png" loading="lazy" alt=""></div>
+                <div class="title"><p>New Arrivals</p></div>
+            </div>
+            <div class="item">
+                <div class="img"><img src="/imgs/flower_lollipop-item.png" loading="lazy" alt=""></div>
+                <div class="title"><p>Mother's Day</p></div>
+            </div>
+            <div class="item">
+                <div class="img"><img src="/imgs/heart_lollipop-item.png" loading="lazy" alt=""></div>
+                <div class="title"><p>Anniversary</p></div>
+            </div>
+            <div class="item">
+                <div class="img"><img src="/imgs/decorative_bear-item.png" loading="lazy" alt=""></div>
+                <div class="title"><p>New Baby</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection-section">
+        <h1 class="collection-title">Feature Collection</h1>
+        <div class="collection-img">
+            <img src="/imgs/2023_MDay_Ad_SS_1.jpg" loading="lazy" alt="Heart Lollipop with model">
+        </div>
+        <div class="collection-container">
+            <img id="carouselPrevBtn" class="carousel-arrow" src="imgs/carousel-left-arrow.svg" loading="lazy" alt="left arrow button">
+            <div class="collection-wrapper">
+                <div class="card">
+                    <div class="img">
+                        <img src="/imgs/heart_lollipop-red.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="card-title"><p>Heart Lollipop - Red</p></div>
+                    <div class="card-price"><p>$29.99</p></div>
+                    <a href="#" class="card-btn">
+                        <div class="button">View Item</div>
+                        <i class="arrow down"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="/imgs/heart_lollipop-pink.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="card-title"><p>Heart Lollipop - Pink</p></div>
+                    <div class="card-price"><p>$29.99</p></div>
+                    <a href="#" class="card-btn">
+                        <div class="button">View Iten</div>
+                        <i class="arrow down"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="/imgs/heart_lollipop-burgundy.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="card-title"><p>Heart Lollipop - Burgundy</p></div>
+                    <div class="card-price"><p>$29.99</p></div>
+                    <a href="#" class="card-btn">
+                        <div class="button">View Item</div>
+                        <i class="arrow down"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="/imgs/placeholder-img.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="card-title"><p>Placeholder</p></div>
+                    <div class="card-price"><p>$29.99</p></div>
+                    <a href="#" class="card-btn">
+                        <div class="button">View Item</div>
+                        <i class="arrow down"></i>
+                    </a>
+                </div>
+            </div>
+            <img id="carouselNextBtn" class="carousel-arrow" src="imgs/carousel-right-arrow.svg" loading="lazy" alt="right arrow button">
+        </div>
+    </section>
+
+    <section id="banner-2">
+        <div class="banner-bkgd"></div>
+        <div class="banner-content">
+            <div class="decorative-text">
+                <img src="/imgs/decorative-text.svg" loading="lazy" alt="Decorative Text">
+            </div>
+            <div class="img-ctn">
+                <img id="hl" src="/imgs/heart-lollipop-red.png" loading="lazy" alt="Heart Lollipop">
+                <img id="fb" src="/imgs/rainbow-flower-bear.png" loading="lazy" alt="Flower Bear Rainbow">
+            </div>
+        </div>
+        <img class="cloud-tr-blue" src="imgs/banner_cloud-top-right-blue.svg" loading="lazy" alt="">
+        <img class="cloud-l" src="/imgs/banner_cloud-left-blue.svg" loading="lazy" alt="">
+        <img class="cloud-r" src="/imgs/banner_cloud-right-blue.svg" loading="lazy" alt="">
+        <div class="linear_gradient-white"></div>
+    </section>
+
+    <section class="product-highlight">
+        <div id="footer-bkgd">
+            <img id="footer-cloud-left" src="/imgs/footer-cloud-left.svg" loading="lazy" alt="footer cloud">
+            <img id="footer-cloud-right" src="/imgs/footer-cloud-right.svg" loading="lazy" alt="footer cloud">
+        </div>
+        <div class="content">
+            <div class="product-img-ctn">
+                <img id="ph-packaging" src="/imgs/flower-bear-packaging-red.png" loading="lazy" alt="Flower bear packaging">
+                <img id="ph-product" src="/imgs/flower-bear-red-front.png" loading="lazy" alt="Flower bear red product">
+            </div>
+            <div class="product-bulletpoints">
+                <div class="highlight-list">
+                    <div class="highlight-bp">
+                        <div class="bp-desc">
+                            <span class="heart-icon"><img src="/imgs/white-heart-icon.svg" loading="lazy" alt=""></span>
+                            <h3>Easy to Gift</h3>
+                            <p>Timeless, elegant, and luxurious. An item embodies sophistication and eternal love.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-bp">
+                        <div class="bp-desc">
+                            <span class="heart-icon"><img src="/imgs/white-heart-icon.svg" loading="lazy" alt=""></span>
+                            <h3>Exclusive Design</h3>
+                            <p>Crafted with unique details, each piece is a work of art and luxury at its finest.</p>
+                        </div>
+                    </div>
+                    <div class="highlight-bp">
+                        <div class="bp-desc">
+                            <span class="heart-icon"><img src="/imgs/white-heart-icon.svg" loading="lazy" alt=""></span>
+                            <h3>No Hassle</h3>
+                            <p>Impeccable quality, our products are designed to simplify your life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Shop All</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Policy Links</h2>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Services</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="animation.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

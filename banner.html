@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #FAFAFA;
+        }
+        .banner-section {
+            width: 100%;
+            height: 735px;
+            background: linear-gradient(180deg, #FAFAFA 30%, #A1CEDE 100%);
+            position: relative;
+            overflow-x: hidden;
+        }
+        @media screen and (min-width: 680px) {
+            .banner-section {
+                height: 437px;
+            }
+        }
+        @media screen and (min-width: 1420px) {
+            .banner-section {
+                height: 688px;
+            }
+        }
+        .deco-img {
+            width: 100%;
+            height: 100%;
+        }
+        .banner {
+            width: 100%;
+            max-width: 430px;
+            height: inherit;
+            margin: 0 auto;
+            position: relative;
+        }
+        @media screen and (min-width: 680px) {
+            .banner {
+                width: 90.75%;
+                max-width: 828px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .banner {
+                position: relative;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (min-width: 1420px) {
+            .banner {
+                max-width: 1103px;
+            }
+        }
+
+        /* Decorative Text */
+        .decorative-text {
+            width: 100%;
+            max-width: 286px;
+            height: auto;
+            position: absolute;
+            top: 21px;
+            left: 50%;
+            z-index: 1;
+            transform: translateX(-50%);
+        }
+        @media screen and (min-width: 680px) {
+            .decorative-text {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+        @media screen and (min-width: 1420px) {
+            .decorative-text {
+                max-width: 397px;
+            }
+        }
+
+        /* Product Image */
+        .img-ctn {
+            width: 100%;
+            max-width: 402px;
+            height: 409px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        @media screen and (min-width: 1420px) {
+            .img-ctn {
+                max-width: 668px;
+                height: 648px;
+            }
+        }
+        /* Heart Lollipop Image */
+        #hl {
+            width: 159px;
+            height: auto;
+            transform: rotate(-32deg);
+            position: absolute;
+            left: 84px;
+            bottom: 9px;
+        }
+        /* Rainbow Flower Bear Image */
+        #fb {
+            width: 249px;
+            height: auto;
+            transform: rotate(19deg);
+            position: absolute;
+            right: 5px;
+            bottom: 9px;
+        }
+        @media screen and (min-width: 1420px) {
+            #hl {
+                width: 253px;
+                left: 134px;
+                bottom: 14px;
+            }
+            #fb {
+                width: 394px;
+                right: 38px;
+                bottom: 14px;
+            }
+        }
+        /* Cloud SVG */
+        .cloud-banner {
+            width: 100%;
+            height: 159px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            margin-bottom: -10px;
+        }
+        @media screen and (min-width: 1280px) {
+            .cloud-banner {
+                height: 209px;
+            }
+        }
+        @media screen and (min-width: 1500px) {
+            .cloud-banner {
+                height: 313px;
+            }
+        }
+        #cloudLeft {
+            width: 160%;
+            max-width: 686px;
+            height: auto;
+            position: absolute;
+            left: -429px;
+            bottom: 0;
+        }
+        #cloudRight {
+            width: 95%;
+            max-width: 410px;
+            height: auto;
+            position: absolute;
+            right: -138px;
+            bottom: 0;
+        }
+        @media screen and (min-width: 768px) {
+            #cloudLeft {
+                left: -115px;
+            }
+            #cloudRight {
+                right: -81px;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            #cloudLeft {
+                left: -122px;
+            }
+            #cloudRight {
+                right: -24px;
+            }
+        }
+        @media screen and (min-width: 1080px) {
+            #cloudLeft {
+                width: 70%;
+                max-width: 901px;
+            }
+            #cloudRight {
+                width: 42%;
+                max-width: 539px;
+            }
+        }
+        @media screen and (min-width: 1500px) {
+            #cloudLeft {
+                max-width: 1355px;
+            }
+            #cloudRight {
+                max-width: 810px;
+                right: -34px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="banner-section">
+        <div class="banner">
+            <div class="decorative-text">
+                <img class="deco-img" src="/imgs/decorative-text.svg" alt="Decorative Text">
+            </div>
+            <div class="img-ctn">
+                <img class="deco-img" id="hl" src="/imgs/heart-lollipop-red.png" alt="Heart decorative lollipop product">
+                <img class="deco-img" id="fb" src="/imgs/rainbow-flower-bear.png" alt="Rainbow Flower Bear">
+            </div>
+        </div>
+        <div class="cloud-banner">
+            <img id="cloudLeft" src="/imgs/banner_cloud-left.svg" alt="Vector Cloud Image">
+            <img id="cloudRight" src="/imgs/banner_cloud-right.svg" alt="Vector Cloud Image">
+        </div>
+    </section>
+</body>
+</html>
