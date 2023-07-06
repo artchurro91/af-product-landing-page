@@ -1,4 +1,5 @@
 import { variantScroll } from "./assets/variant-carousel.js";
+import { productMediaGallery } from "./assets/product-media-gallery.js";
 
 // Product Variant Selected
 const productFeatureImage = document.querySelector('.product-feature-image img');
@@ -62,13 +63,16 @@ const updateCarouselWidth = () => {
   const totalVariants = productVariants.length;
   const { width, marginRight } = getComputedStyle(productVariants[0]);
   let carouselWidth = (parseInt(width) + parseInt(marginRight)) * totalVariants;
-  variantCarousel.style.width = carouselWidth + 'px';
+
+  if (mediaQuery.matches) {
+    variantCarousel.style.width = carouselWidth + 'px';
+  } else {
+    variantCarousel.style.width = ''; // Clear the inline "width" style
+  }
 };
 
 const handleMediaQueryChange = () => {
-  if (mediaQuery.matches) {
-    updateCarouselWidth();
-  }
+  updateCarouselWidth();
 };
 
 mediaQuery.addEventListener('change', handleMediaQueryChange);
@@ -129,16 +133,5 @@ jQuery(document).ready(function($) {
     $('.js-quantity-field').on('change', onQuantityFieldChange);
 });
 
-// Selected Thumbnail Image Replaces Feature Image
-const productThumbnailImages = document.querySelectorAll('.product-thumbnail img');
-productThumbnailImages.forEach(item => {
-    const handleThumbnailSelection = () => {
-        const newFeatureImage = item.getAttribute('src');
-        const thumbnailAltText = item.getAttribute('alt');
-        productFeatureImage.setAttribute('src', newFeatureImage);
-        productFeatureImage.setAttribute('alt', thumbnailAltText);
-    };
-
-    item.addEventListener('mousedown', handleThumbnailSelection);
-    item.addEventListener('touchstart', handleThumbnailSelection);
-});
+// Product Media Gallery
+productMediaGallery();
