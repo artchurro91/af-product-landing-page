@@ -40,7 +40,7 @@ productVariants.forEach(item => {
 
         // Change Product Feature Image
         const newFeatureImage = item.querySelector('input').getAttribute('data-full-image');
-        productFeatureImage.setAttribute('src', '/imgs/Product-Images/' + newFeatureImage);
+        productFeatureImage.setAttribute('src', newFeatureImage);
 
         // Change Quantity Text Field Based On Max Quantity
         const dataInventory = item.querySelector('input').getAttribute('data-inventory-quantity');

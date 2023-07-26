@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Always and Forever</title>
 </head>
@@ -118,31 +120,19 @@
                             <ul id="variantCarousel">
                                 <!-- Carousel Item -->
                                 <li class="product-variant" role="button" tabindex="0" aria-label="Black">
-                                    <input type="radio" name="id" id="variant-1" value="Swatch 1" data-inventory-quantity="100" data-full-image="crystal-bear-black.jpg" data-color="black">
+                                    <input type="radio" name="id" id="variant-1" value="Swatch 1" data-inventory-quantity="100" data-full-image="https://imdiwholesale.com/alwaysandforever/crystal-bear/crystal-bear-black.jpg" data-color="black">
                                     <label for="variant-1">
                                         <img src="/imgs/Product-Swatches/crystal-bear-front-black.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
                                     </label>
                                 </li>
                                 <li class="product-variant" role="button" tabindex="0" aria-label="Bubblegum">
-                                    <input type="radio" name="id" id="variant-2" value="Swatch 2" data-inventory-quantity="100" data-full-image="crystal-bear-bubblegum.jpg" data-color="bubblegum">
+                                    <input type="radio" name="id" id="variant-2" value="Swatch 2" data-inventory-quantity="100" data-full-image="https://imdiwholesale.com/alwaysandforever/crystal-bear/crystal-bear-bubblegum.jpg" data-color="bubblegum">
                                     <label for="variant-2">
                                         <img src="/imgs/Product-Swatches/crystal-bear-front-bubblegum.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
                                     </label>
                                 </li>
-                                <li class="product-variant" role="button" tabindex="0" aria-label="Coral">
-                                    <input type="radio" name="id" id="variant-3" value="Swatch 3" data-inventory-quantity="100" data-full-image="crystal-bear-coral.jpg" data-color="coral">
-                                    <label for="variant-3">
-                                        <img src="/imgs/Product-Swatches/crystal-bear-front-coral.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
-                                    </label>
-                                </li>
-                                <li class="product-variant" role="button" tabindex="0" aria-label="Cream">
-                                    <input type="radio" name="id" id="variant-4" value="Swatch 4" data-inventory-quantity="100" data-full-image="crystal-bear-cream.jpg" data-color="cream">
-                                    <label for="variant-4">
-                                        <img src="/imgs/Product-Swatches/crystal-bear-front-cream.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
-                                    </label>
-                                </li>
                                 <li class="product-variant" role="button" tabindex="0" aria-label="Dark Blue">
-                                    <input type="radio" name="id" id="variant-5" value="Swatch 5" data-inventory-quantity="100" data-full-image="crystal-bear-dark_blue.jpg" data-color="blue">
+                                    <input type="radio" name="id" id="variant-5" value="Swatch 5" data-inventory-quantity="100" data-full-image="https://imdiwholesale.com/alwaysandforever/crystal-bear/crystal-bear-dark_blue.jpg" data-color="blue">
                                     <label for="variant-5">
                                         <img src="/imgs/Product-Swatches/crystal-bear-front-dark_blue.jpg" alt="Product Variant Swatch" loading="lazy" width="42" height="42">
                                     </label>
@@ -269,6 +259,17 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!--<script src="main.js"></script>-->
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="js-main-product.js" type="module"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slick-carousel').slick({
+                prevArrow: '#thumbnailPrevBtn',
+                nextArrow: '#thumbnailNextBtn',
+                vertical: true
+            });
+        });
+    </script>
 </body>
 </html>

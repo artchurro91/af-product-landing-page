@@ -127,3 +127,11 @@ closeSearchBtn.addEventListener('click', () => {
   searchContainer.style.top = '-100%';
   searchContainer.style.pointerEvents = 'none';
 });
+
+// Slick Carousel
+
+$('.slick-carousel').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
